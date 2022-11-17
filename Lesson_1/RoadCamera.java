@@ -5,10 +5,10 @@ import java.io.InputStreamReader;
 public class RoadCamera {
     public static void main(String[] args) throws IOException {
         //Параметры программы
-        int maxOncomingSpeed = 60; // km/h
+        int maxOncomingSpeed = 50; // km/h
         int speedFineGrade = 20; // km/h
         int finePerGrade = 1000; // RUB
-        int criminalSpeed = 180; // km/h
+        int criminalSpeed = 160; // km/h
 
         //=============================================================
 
