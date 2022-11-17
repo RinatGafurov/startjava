@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 
 public class RoadCamera {
     public static void main(String[] args) throws IOException {
-        //Параметры программы
+        //РџР°СЂР°РјРµС‚СЂС‹ РїСЂРѕРіСЂР°РјРјС‹
         int maxOncomingSpeed = 60; // km/h
         int speedFineGrade = 20; // km/h
         int finePerGrade = 1000; // RUB
@@ -12,19 +12,19 @@ public class RoadCamera {
 
         //=============================================================
 
-        System.out.println("Введите скорость автомобиля:");
+        System.out.println("Р’РІРµРґРёС‚Рµ СЃРєРѕСЂРѕСЃС‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЏ:");
 
-        //Скорость автомобиля
+        //РЎРєРѕСЂРѕСЃС‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЏ
         int oncomingSpeed = Integer.parseInt((new BufferedReader(new InputStreamReader(System.in))).readLine());
         if (oncomingSpeed >= criminalSpeed) {
-            System.out.println("Вызов полиции...");
+            System.out.println("Р’С‹Р·РѕРІ РїРѕР»РёС†РёРё...");
         } else if (oncomingSpeed > maxOncomingSpeed) {
             int overSpeed = oncomingSpeed - maxOncomingSpeed;
             int gradesCount = overSpeed / speedFineGrade;
             int fine = finePerGrade * gradesCount;
-            System.out.println("Сумма штрафа: " + fine);
+            System.out.println("РЎСѓРјРјР° С€С‚СЂР°С„Р°: " + fine);
         } else {
-            System.out.println("Скорость не превышена");
+            System.out.println("РЎРєРѕСЂРѕСЃС‚СЊ РЅРµ РїСЂРµРІС‹С€РµРЅР°");
         }
     }
 }
